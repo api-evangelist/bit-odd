@@ -1,8 +1,14 @@
 aid: bit-odd
 name: BIT ODD
-description: 'BIT ODD is a company surfaced as a portfolio company of index-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: entertainment. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'BIT ODD is a Helsinki-based mobile game studio founded in 2019 by former
+  Supercell creative leads Lasse Louhento, Taneli Oksama, and Jani Lintunen. The studio
+  hand-crafts casual mobile games driven by feeling and a sense of wonder rather than
+  aggressive monetization, explicitly rejecting ad-spam and dark-pattern design. Backed
+  by Index Ventures, Griffin Gaming Partners, and Makers Fund across a EUR 5M seed and
+  a EUR 17M round, BIT ODD is a consumer entertainment company with no public developer
+  platform, API, or SDK surface; this API Evangelist profile tracks the company as a
+  portfolio lead and carries only the artifacts that can be honestly probed from its
+  public web presence (domain security, legal pages).'
 url: https://raw.githubusercontent.com/api-evangelist/bit-odd/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,29 @@ x-backed-by:
 - index-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://bit-odd.com/icons/icon-512x512.png
 tags:
 - Company
 - Entertainment
+- Gaming
+- Mobile Games
+- Game Studio
+- Finland
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bit-odd-domain-security.yml
 - type: Website
-  url: http://www.bit-odd.com
+  url: https://bit-odd.com
+- type: PrivacyPolicy
+  url: https://bit-odd.com/privacy-policy
+- type: TermsOfService
+  url: https://bit-odd.com/terms-of-service
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
